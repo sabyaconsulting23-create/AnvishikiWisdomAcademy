@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anvishiki Wisdom Academy | Ancient Wisdom. Modern Transformation.</title>
+<meta name="description" content="Transform your life through Chanakya's Anvishiki philosophy, Law of Attraction, NLP, Spirituality and Numerology. Book personal coaching today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700;900&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --royal-blue: #0a1628;
+  --deep-blue: #0d1f3c;
+  --mid-blue: #1a3460;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-dim: #8a6d2f;
+  --ivory: #f8f4ec;
+  --ivory-soft: #faf7f2;
+  --saffron: #e07b39;
+  --saffron-light: #f0a060;
+  --charcoal: #1c1c1e;
+  --text-light: #d4c5a0;
+  --text-muted: #8a7d6a;
+  --white: #ffffff;
+  --card-bg: rgba(20, 35, 65, 0.85);
+  --gold-gradient: linear-gradient(135deg, #c9a84c, #f0d070, #c9a84c);
+  --blue-gradient: linear-gradient(180deg, #0a1628 0%, #0d1f3c 50%, #0a2040 100%);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--royal-blue);
+  color: var(--ivory);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--royal-blue); }
+::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
+
+/* ---- NAV ---- */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 18px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(10, 22, 40, 0.0);
+  backdrop-filter: blur(0px);
+  transition: all 0.4s ease;
+  border-bottom: 1px solid transparent;
+}
+nav.scrolled {
+  background: rgba(10, 22, 40, 0.97);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 14px 48px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 12px; text-decoration: none;
+}
+.nav-logo-symbol {
+  width: 44px; height: 44px;
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 20px; color: var(--royal-blue); font-weight: 700;
+  box-shadow: 0 0 20px rgba(201,168,76,0.4);
+}
+.nav-logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 14px; color: var(--gold-light);
+  letter-spacing: 2px; line-height: 1.3;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex; gap: 36px; list-style: none;
+}
+.nav-links a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px; font-weight: 500;
+  color: var(--text-light);
+  text-decoration: none; letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+  height: 1px; background: var(--gold);
+  transform: scaleX(0); transition: transform 0.3s;
+}
+.nav-links a:hover { color: var(--gold-light); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-cta {
+  background: var(--gold-gradient);
+  color: var(--royal-blue) !important;
+  padding: 10px 24px; border-radius: 2px;
+  font-weight: 700; letter-spacing: 1px;
+  text-decoration: none; font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(201,168,76,0.2);
+}
+.nav-cta:hover { box-shadow: 0 0 30px rgba(201,168,76,0.5); transform: translateY(-1px); }
+.nav-cta::after { display: none !important; }
+
+/* ---- HAMBURGER ---- */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; }
+.hamburger span { display: block; width: 26px; height: 2px; background: var(--gold); transition: all 0.3s; }
+.mobile-menu {
+  display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10,22,40,0.98); z-index: 999;
+  flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-family: 'Cinzel', serif; font-size: 22px; color: var(--gold-light);
+  text-decoration: none; letter-spacing: 3px; text-transform: uppercase;
+  transition: color 0.3s;
+}
+.mobile-menu a:hover { color: var(--saffron); }
+
+/* ---- HERO ---- */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  background: var(--royal-blue);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 20%, rgba(201,168,76,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(13,31,60,0.8) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 80% 80%, rgba(10,22,40,0.8) 0%, transparent 70%);
+}
+.hero-mandala {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; height: 700px;
+  opacity: 0.04;
+  animation: rotateSlow 60s linear infinite;
+}
+@keyframes rotateSlow { to { transform: translate(-50%,-50%) rotate(360deg); } }
+.hero-mandala svg { width: 100%; height: 100%; }
+.hero-particles {
+  position: absolute; inset: 0; overflow: hidden;
+}
+.particle {
+  position: absolute;
+  width: 2px; height: 2px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: floatParticle var(--dur, 8s) ease-in-out infinite;
+  opacity: 0;
+}
+@keyframes floatParticle {
+  0% { opacity: 0; transform: translateY(0) scale(0); }
+  20% { opacity: 0.7; transform: translateY(-20px) scale(1); }
+  80% { opacity: 0.3; transform: translateY(-120px) scale(0.5); }
+  100% { opacity: 0; transform: translateY(-200px) scale(0); }
+}
+.hero-split {
+  display: grid; grid-template-columns: 1fr 1fr;
+  width: 100%; max-width: 1400px;
+  padding: 0 60px; position: relative; z-index: 2;
+  gap: 60px; align-items: center;
+  padding-top: 80px;
+}
+.hero-left {
+  display: flex; flex-direction: column;
+  animation: fadeInLeft 1.2s ease both;
+}
+.hero-eyebrow {
+  font-family: 'Cinzel', serif; font-size: 11px;
+  color: var(--saffron); letter-spacing: 4px;
+  text-transform: uppercase; margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+  content: ''; flex: 0 0 40px; height: 1px; background: var(--saffron);
+}
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(36px, 4.5vw, 64px);
+  font-weight: 700; line-height: 1.1;
+  color: var(--ivory);
+  margin-bottom: 8px;
+}
+.hero-title span {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+.hero-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(18px, 2vw, 26px);
+  font-style: italic; color: var(--text-light);
+  margin-bottom: 28px; font-weight: 300;
+}
+.hero-divider {
+  width: 60px; height: 2px;
+  background: var(--gold-gradient);
+  margin-bottom: 28px;
+}
+.hero-desc {
+  font-size: 16px; line-height: 1.8;
+  color: var(--text-muted); margin-bottom: 40px;
+  max-width: 500px;
+}
+.hero-btns {
+  display: flex; flex-wrap: wrap; gap: 16px;
+}
+.btn-primary {
+  background: var(--gold-gradient);
+  color: var(--royal-blue);
+  padding: 16px 32px; border: none;
+  font-family: 'Cinzel', serif; font-size: 12px;
+  letter-spacing: 2px; text-transform: uppercase;
+  font-weight: 700; cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 8px 32px rgba(201,168,76,0.25);
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+.btn-primary:hover {
+  box-shadow: 0 12px 40px rgba(201,168,76,0.45);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--gold-light);
+  padding: 15px 32px;
+  border: 1px solid rgba(201,168,76,0.4);
+  font-family: 'Cinzel', serif; font-size: 12px;
+  letter-spacing: 2px; text-transform: uppercase;
+  font-weight: 600; cursor: pointer; text-decoration: none;
+  transition: all 0.3s;
+}
+.btn-secondary:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.08);
+  transform: translateY(-2px);
+}
+.btn-ghost {
+  background: rgba(224,123,57,0.12);
+  color: var(--saffron-light);
+  padding: 15px 28px;
+  border: 1px solid rgba(224,123,57,0.3);
+  font-family: 'Cinzel', serif; font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase;
+  font-weight: 600; cursor: pointer; text-decoration: none;
+  transition: all 0.3s;
+}
+.btn-ghost:hover {
+  background: rgba(224,123,57,0.2);
+  border-color: var(--saffron);
+}
+.hero-right {
+  position: relative;
+  animation: fadeInRight 1.2s ease 0.3s both;
+}
+.hero-visual-frame {
+  position: relative;
+  aspect-ratio: 3/4;
+  max-height: 500px;
+}
+.hero-img-box {
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(201,168,76,0.05) 0%, rgba(13,31,60,0.5) 100%);
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.hero-illustration {
+  width: 100%; height: 100%;
+  position: relative;
+}
+.hero-corner {
+  position: absolute; width: 30px; height: 30px;
+  border-color: var(--gold); border-style: solid;
+}
+.hero-corner.tl { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.hero-corner.tr { top: -1px; right: -1px; border-width: 2px 2px 0 0; }
+.hero-corner.bl { bottom: -1px; left: -1px; border-width: 0 0 2px 2px; }
+.hero-corner.br { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+.hero-stats {
+  display: flex; gap: 32px; margin-top: 40px;
+}
+.hero-stat { text-align: left; }
+.hero-stat-num {
+  font-family: 'Cinzel', serif; font-size: 32px;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; font-weight: 700;
+}
+.hero-stat-label {
+  font-size: 11px; letter-spacing: 2px;
+  color: var(--text-muted); text-transform: uppercase; margin-top: 2px;
+}
+
+@keyframes fadeInLeft { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes fadeInRight { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
+
+/* ---- MARQUEE ---- */
+.marquee-section {
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold), var(--gold-light), var(--gold), var(--gold-dim));
+  padding: 14px 0; overflow: hidden;
+}
+.marquee-track {
+  display: flex; gap: 0; animation: marquee 25s linear infinite;
+  white-space: nowrap;
+}
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-item {
+  font-family: 'Cinzel', serif;
+  font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--royal-blue); font-weight: 700;
+  padding: 0 40px;
+  display: flex; align-items: center; gap: 16px;
+}
+.marquee-item::before { content: '✦'; font-size: 10px; }
+
+/* ---- SECTION BASE ---- */
+section { padding: 100px 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.section-eyebrow {
+  font-family: 'Cinzel', serif; font-size: 11px;
+  color: var(--saffron); letter-spacing: 4px;
+  text-transform: uppercase; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 16px;
+}
+.section-eyebrow::before {
+  content: ''; flex: 0 0 30px; height: 1px; background: var(--saffron);
+}
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 700; color: var(--ivory);
+  line-height: 1.15; margin-bottom: 20px;
+}
+.section-title span {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-style: italic;
+  color: var(--text-light); line-height: 1.6;
+  max-width: 600px; font-weight: 300;
+}
+.gold-line {
+  width: 60px; height: 2px;
+  background: var(--gold-gradient);
+  margin: 24px 0;
+}
+
+/* ---- ANVISHIKI SECTION ---- */
+.anvishiki-section {
+  background: var(--deep-blue);
+  position: relative; overflow: hidden;
+}
+.anvishiki-section::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.anvishiki-section::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.anvishiki-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+.anvishiki-text p {
+  font-size: 16px; line-height: 1.9; color: var(--text-muted); margin-bottom: 20px;
+}
+.anvishiki-quote {
+  border-left: 3px solid var(--gold);
+  padding: 20px 28px;
+  background: rgba(201,168,76,0.04);
+  margin: 32px 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-style: italic;
+  color: var(--gold-light); line-height: 1.6;
+}
+.anvishiki-pillars {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.pillar-card {
+  background: rgba(26,52,96,0.4);
+  border: 1px solid rgba(201,168,76,0.15);
+  padding: 24px;
+  position: relative; overflow: hidden;
+  transition: all 0.4s;
+}
+.pillar-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 2px;
+  background: var(--gold-gradient);
+  transform: scaleX(0); transition: transform 0.4s;
+}
+.pillar-card:hover::before { transform: scaleX(1); }
+.pillar-card:hover {
+  background: rgba(26,52,96,0.7);
+  border-color: rgba(201,168,76,0.35);
+  transform: translateY(-4px);
+}
+.pillar-icon {
+  font-size: 28px; margin-bottom: 12px;
+}
+.pillar-name {
+  font-family: 'Cinzel', serif; font-size: 14px;
+  color: var(--gold-light); letter-spacing: 1px; margin-bottom: 8px;
+}
+.pillar-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* TIMELINE */
+.timeline {
+  display: flex; align-items: center; gap: 0;
+  margin-top: 60px; position: relative;
+}
+.timeline-item {
+  flex: 1; text-align: center; position: relative;
+}
+.timeline-item::after {
+  content: '';
+  position: absolute; top: 20px; left: 50%; right: -50%;
+  height: 1px; background: linear-gradient(90deg, var(--gold), rgba(201,168,76,0.3));
+}
+.timeline-item:last-child::after { display: none; }
+.timeline-dot {
+  width: 40px; height: 40px;
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  font-family: 'Cinzel', serif; font-size: 14px;
+  color: var(--royal-blue); font-weight: 700;
+  position: relative; z-index: 1;
+  box-shadow: 0 0 20px rgba(201,168,76,0.3);
+}
+.timeline-label {
+  font-family: 'Cinzel', serif; font-size: 11px;
+  color: var(--gold-light); letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ---- ABOUT ---- */
+.about-section {
+  background: var(--royal-blue);
+  position: relative;
+}
+.about-inner {
+  display: grid; grid-template-columns: 1fr 1.5fr;
+  gap: 80px; align-items: center;
+}
+.about-photo-frame {
+  position: relative;
+}
+.about-photo {
+  aspect-ratio: 3/4; width: 100%;
+  background: linear-gradient(145deg, rgba(26,52,96,0.8) 0%, rgba(10,22,40,0.9) 100%);
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.about-photo-placeholder {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  color: var(--text-muted);
+}
+.about-photo-placeholder svg { opacity: 0.4; }
+.about-photo-placeholder span { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+.about-accent {
+  position: absolute;
+  bottom: -20px; right: -20px;
+  width: 120px; height: 120px;
+  border: 2px solid rgba(201,168,76,0.3);
+  z-index: -1;
+}
+.about-accent-2 {
+  position: absolute;
+  top: -20px; left: -20px;
+  width: 80px; height: 80px;
+  border: 1px solid rgba(224,123,57,0.3);
+  z-index: -1;
+}
+.about-text p {
+  font-size: 16px; line-height: 1.9; color: var(--text-muted); margin-bottom: 20px;
+}
+.about-specializations {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px;
+}
+.spec-tag {
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.25);
+  color: var(--gold-light);
+  padding: 8px 18px;
+  font-size: 12px; letter-spacing: 1.5px;
+  text-transform: uppercase; font-family: 'Cinzel', serif;
+  transition: all 0.3s;
+}
+.spec-tag:hover {
+  background: rgba(201,168,76,0.15);
+  border-color: var(--gold);
+}
+
+/* ---- SERVICES ---- */
+.services-section {
+  background: linear-gradient(180deg, var(--deep-blue) 0%, var(--royal-blue) 100%);
+  position: relative; overflow: hidden;
+}
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 28px; margin-top: 60px;
+}
+.service-card {
+  background: rgba(13,31,60,0.6);
+  border: 1px solid rgba(201,168,76,0.12);
+  padding: 40px 32px;
+  position: relative; overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex; flex-direction: column;
+}
+.service-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--gold-gradient);
+}
+.service-card::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center top, rgba(201,168,76,0.06) 0%, transparent 70%);
+  opacity: 0; transition: opacity 0.4s;
+}
+.service-card:hover {
+  border-color: rgba(201,168,76,0.35);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(201,168,76,0.1);
+}
+.service-card:hover::after { opacity: 1; }
+.service-number {
+  font-family: 'Cinzel', serif;
+  font-size: 60px; font-weight: 700;
+  color: rgba(201,168,76,0.08);
+  position: absolute; top: 20px; right: 24px;
+  line-height: 1;
+}
+.service-icon {
+  font-size: 40px; margin-bottom: 20px;
+  position: relative; z-index: 1;
+}
+.service-title {
+  font-family: 'Cinzel', serif; font-size: 20px;
+  color: var(--ivory); margin-bottom: 8px;
+  position: relative; z-index: 1;
+}
+.service-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px; font-style: italic;
+  color: var(--gold-light); margin-bottom: 24px;
+  position: relative; z-index: 1;
+}
+.service-includes {
+  list-style: none; margin-bottom: 32px;
+  flex: 1; position: relative; z-index: 1;
+}
+.service-includes li {
+  font-size: 14px; color: var(--text-muted);
+  padding: 8px 0; border-bottom: 1px solid rgba(201,168,76,0.08);
+  display: flex; align-items: center; gap: 10px;
+}
+.service-includes li::before {
+  content: '✦'; color: var(--gold); font-size: 10px; flex-shrink: 0;
+}
+.service-card .btn-primary {
+  align-self: flex-start; margin-top: auto;
+  position: relative; z-index: 1;
+  font-size: 11px;
+}
+
+/* ---- TRANSFORMATION ---- */
+.transform-section {
+  background: var(--royal-blue);
+  position: relative;
+}
+.transform-grid {
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  gap: 40px; align-items: center; margin-top: 60px;
+}
+.transform-col {
+  background: rgba(13,31,60,0.5);
+  border: 1px solid rgba(201,168,76,0.12);
+  padding: 40px;
+}
+.transform-col.before {
+  border-color: rgba(224,123,57,0.2);
+}
+.transform-col.after {
+  border-color: rgba(201,168,76,0.3);
+  background: rgba(201,168,76,0.04);
+}
+.transform-label {
+  font-family: 'Cinzel', serif;
+  font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+  margin-bottom: 28px; display: flex; align-items: center; gap: 12px;
+}
+.transform-col.before .transform-label { color: var(--saffron); }
+.transform-col.after .transform-label { color: var(--gold-light); }
+.transform-items { list-style: none; }
+.transform-items li {
+  padding: 14px 0; border-bottom: 1px solid rgba(201,168,76,0.08);
+  font-size: 16px; display: flex; align-items: center; gap: 14px;
+}
+.transform-items li:last-child { border-bottom: none; }
+.transform-col.before .transform-items li { color: var(--text-muted); }
+.transform-col.after .transform-items li {
+  color: var(--ivory); font-weight: 500;
+}
+.transform-col.before .transform-items li::before { content: '✗'; color: rgba(224,123,57,0.6); }
+.transform-col.after .transform-items li::before { content: '✦'; color: var(--gold); }
+.transform-arrow {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+.arrow-circle {
+  width: 70px; height: 70px;
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; color: var(--royal-blue);
+  box-shadow: 0 0 30px rgba(201,168,76,0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 30px rgba(201,168,76,0.3); } 50% { box-shadow: 0 0 50px rgba(201,168,76,0.5); } }
+
+/* ---- COURSES ---- */
+.courses-section {
+  background: var(--deep-blue);
+  position: relative;
+}
+.courses-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px; margin-top: 60px;
+}
+.course-card {
+  background: rgba(10,22,40,0.7);
+  border: 1px solid rgba(201,168,76,0.1);
+  padding: 36px 28px;
+  position: relative; overflow: hidden;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.course-card::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px; background: var(--gold-gradient);
+  transform: scaleX(0); transition: transform 0.4s;
+}
+.course-card:hover::before { transform: scaleX(1); }
+.course-card:hover {
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+}
+.course-icon { font-size: 42px; margin-bottom: 20px; }
+.course-title {
+  font-family: 'Cinzel', serif; font-size: 17px;
+  color: var(--ivory); margin-bottom: 12px; line-height: 1.3;
+}
+.course-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+.course-tag {
+  display: inline-block; margin-top: 20px;
+  background: rgba(201,168,76,0.08);
+  color: var(--gold); font-size: 11px;
+  padding: 6px 14px; letter-spacing: 1.5px;
+  text-transform: uppercase; font-family: 'Cinzel', serif;
+}
+
+/* ---- TESTIMONIALS ---- */
+.testimonials-section {
+  background: var(--royal-blue);
+  position: relative; overflow: hidden;
+}
+.testimonials-section::before {
+  content: '"';
+  position: absolute; top: 40px; left: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 300px; color: rgba(201,168,76,0.03);
+  line-height: 1; pointer-events: none;
+}
+.testimonials-slider {
+  margin-top: 60px; position: relative;
+  overflow: hidden;
+}
+.testimonials-track {
+  display: flex; gap: 28px;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.testimonial-card {
+  flex: 0 0 calc(33.333% - 19px);
+  background: rgba(13,31,60,0.6);
+  border: 1px solid rgba(201,168,76,0.12);
+  padding: 36px;
+  position: relative;
+}
+.testimonial-stars {
+  color: var(--gold); font-size: 16px; margin-bottom: 20px; letter-spacing: 3px;
+}
+.testimonial-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-style: italic;
+  color: var(--text-light); line-height: 1.7;
+  margin-bottom: 28px;
+}
+.testimonial-author {
+  display: flex; align-items: center; gap: 16px;
+}
+.testimonial-avatar {
+  width: 50px; height: 50px; border-radius: 50%;
+  background: var(--gold-gradient);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cinzel', serif; font-weight: 700;
+  color: var(--royal-blue); font-size: 18px;
+}
+.testimonial-name {
+  font-family: 'Cinzel', serif; font-size: 14px;
+  color: var(--gold-light); margin-bottom: 4px;
+}
+.testimonial-role { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; }
+.slider-controls {
+  display: flex; align-items: center; justify-content: center;
+  gap: 20px; margin-top: 40px;
+}
+.slider-btn {
+  width: 44px; height: 44px;
+  border: 1px solid rgba(201,168,76,0.3);
+  background: transparent; color: var(--gold);
+  cursor: pointer; font-size: 18px;
+  transition: all 0.3s;
+  display: flex; align-items: center; justify-content: center;
+}
+.slider-btn:hover {
+  background: rgba(201,168,76,0.1);
+  border-color: var(--gold);
+}
+.slider-dots { display: flex; gap: 8px; }
+.slider-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.3);
+  cursor: pointer; transition: all 0.3s;
+}
+.slider-dot.active {
+  background: var(--gold);
+  transform: scale(1.3);
+}
+
+/* ---- LEAD GEN ---- */
+.leadgen-section {
+  background: linear-gradient(135deg, rgba(10,22,40,0.95) 0%, rgba(13,31,60,0.95) 100%);
+  position: relative; overflow: hidden;
+}
+.leadgen-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 20% 50%, rgba(201,168,76,0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(224,123,57,0.04) 0%, transparent 70%);
+}
+.leadgen-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center; position: relative; z-index: 1;
+}
+.leadgen-book {
+  aspect-ratio: 3/4; max-height: 420px;
+  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border: 1px solid rgba(201,168,76,0.3);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 40px; text-align: center;
+  position: relative; box-shadow: 20px 20px 60px rgba(0,0,0,0.5);
+}
+.book-top-bar {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 6px; background: var(--gold-gradient);
+}
+.book-title {
+  font-family: 'Cinzel', serif; font-size: 24px;
+  color: var(--gold-light); line-height: 1.3;
+  margin-bottom: 20px;
+}
+.book-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px; font-style: italic;
+  color: var(--text-light); margin-bottom: 28px;
+}
+.book-chapters { text-align: left; width: 100%; }
+.book-chapter {
+  font-size: 12px; color: var(--text-muted);
+  padding: 8px 0; border-bottom: 1px solid rgba(201,168,76,0.1);
+  display: flex; align-items: center; gap: 10px;
+}
+.book-chapter::before { content: '✦'; color: var(--gold); font-size: 9px; }
+.leadgen-form-area .section-title { font-size: 34px; }
+.form-group { margin-bottom: 16px; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 16px 20px;
+  background: rgba(13,31,60,0.8);
+  border: 1px solid rgba(201,168,76,0.2);
+  color: var(--ivory); font-family: 'Raleway', sans-serif;
+  font-size: 15px; outline: none;
+  transition: border-color 0.3s;
+}
+.form-group input:focus, .form-group textarea:focus {
+  border-color: rgba(201,168,76,0.5);
+}
+.form-group input::placeholder, .form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group textarea { height: 120px; resize: none; }
+
+/* ---- BOOKING ---- */
+.booking-section {
+  background: var(--deep-blue);
+  position: relative;
+}
+.booking-inner { text-align: center; }
+.booking-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px; margin-top: 60px;
+}
+.booking-card {
+  background: rgba(10,22,40,0.8);
+  border: 1px solid rgba(201,168,76,0.15);
+  padding: 40px 28px; text-align: center;
+  transition: all 0.4s; position: relative;
+}
+.booking-card.featured {
+  border-color: rgba(201,168,76,0.4);
+  background: rgba(201,168,76,0.04);
+}
+.booking-card.featured::before {
+  content: 'MOST POPULAR';
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--gold-gradient);
+  color: var(--royal-blue); font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 2px; padding: 4px 16px;
+}
+.booking-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+  border-color: rgba(201,168,76,0.35);
+}
+.booking-icon { font-size: 48px; margin-bottom: 20px; }
+.booking-title {
+  font-family: 'Cinzel', serif; font-size: 20px;
+  color: var(--ivory); margin-bottom: 12px;
+}
+.booking-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; }
+.whatsapp-row {
+  display: flex; justify-content: center; gap: 20px;
+  margin-top: 48px; flex-wrap: wrap;
+}
+.whatsapp-btn {
+  display: flex; align-items: center; gap: 10px;
+  background: #25D366; color: white;
+  padding: 14px 28px; text-decoration: none;
+  font-family: 'Cinzel', serif; font-size: 12px;
+  letter-spacing: 2px; text-transform: uppercase;
+  transition: all 0.3s; font-weight: 600;
+}
+.whatsapp-btn:hover { background: #20c05c; transform: translateY(-2px); }
+
+/* ---- BLOG ---- */
+.blog-section {
+  background: var(--royal-blue);
+}
+.blog-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 28px; margin-top: 60px;
+}
+.blog-card {
+  background: rgba(13,31,60,0.5);
+  border: 1px solid rgba(201,168,76,0.1);
+  overflow: hidden; transition: all 0.4s;
+}
+.blog-card:hover {
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
+}
+.blog-thumb {
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, rgba(26,52,96,0.8), rgba(10,22,40,0.9));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 40px;
+  position: relative; overflow: hidden;
+}
+.blog-tag {
+  position: absolute; bottom: 12px; left: 12px;
+  background: var(--gold-gradient);
+  color: var(--royal-blue); font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 1.5px; padding: 4px 12px;
+  text-transform: uppercase; font-weight: 700;
+}
+.blog-content { padding: 28px; }
+.blog-title {
+  font-family: 'Cinzel', serif; font-size: 16px;
+  color: var(--ivory); margin-bottom: 12px; line-height: 1.4;
+}
+.blog-excerpt { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+.blog-meta {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 11px; color: var(--text-muted); letter-spacing: 1px;
+}
+.blog-read {
+  color: var(--gold); text-decoration: none; font-family: 'Cinzel', serif;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  transition: color 0.3s;
+}
+.blog-read:hover { color: var(--gold-light); }
+
+/* ---- CONTACT ---- */
+.contact-section {
+  background: var(--deep-blue);
+  position: relative;
+}
+.contact-inner {
+  display: grid; grid-template-columns: 1fr 1.3fr;
+  gap: 80px; align-items: start;
+}
+.contact-info { padding-top: 20px; }
+.contact-method {
+  display: flex; align-items: flex-start; gap: 20px;
+  margin-bottom: 32px;
+}
+.contact-icon {
+  width: 50px; height: 50px;
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+  transition: all 0.3s;
+}
+.contact-method:hover .contact-icon {
+  background: rgba(201,168,76,0.15);
+  border-color: var(--gold);
+}
+.contact-method-label {
+  font-family: 'Cinzel', serif; font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 6px;
+}
+.contact-method-value {
+  font-size: 16px; color: var(--ivory);
+  text-decoration: none; transition: color 0.3s;
+}
+.contact-method-value:hover { color: var(--gold-light); }
+
+/* ---- FOOTER ---- */
+footer {
+  background: #060e1a;
+  border-top: 1px solid rgba(201,168,76,0.15);
+  padding: 60px 0 30px;
+}
+.footer-inner {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px; margin-bottom: 50px;
+}
+.footer-brand .nav-logo-text { font-size: 16px; margin-top: 12px; }
+.footer-desc {
+  font-size: 14px; color: var(--text-muted);
+  line-height: 1.8; margin-top: 16px;
+}
+.footer-social {
+  display: flex; gap: 12px; margin-top: 24px;
+}
+.social-link {
+  width: 38px; height: 38px;
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); text-decoration: none; font-size: 16px;
+  transition: all 0.3s;
+}
+.social-link:hover {
+  border-color: var(--gold); color: var(--gold);
+  background: rgba(201,168,76,0.08);
+}
+.footer-col h4 {
+  font-family: 'Cinzel', serif; font-size: 13px;
+  color: var(--gold-light); letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 24px;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 12px; }
+.footer-links a {
+  font-size: 14px; color: var(--text-muted);
+  text-decoration: none; transition: color 0.3s;
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-links a::before { content: '›'; color: var(--gold-dim); }
+.footer-links a:hover { color: var(--gold-light); }
+.footer-bottom {
+  border-top: 1px solid rgba(201,168,76,0.1);
+  padding-top: 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.footer-copyright { font-size: 13px; color: var(--text-muted); }
+.footer-legal { display: flex; gap: 28px; }
+.footer-legal a { font-size: 13px; color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+.footer-legal a:hover { color: var(--gold-light); }
+
+/* ---- FLOATING WHATSAPP ---- */
+.float-whatsapp {
+  position: fixed; bottom: 30px; right: 30px;
+  width: 58px; height: 58px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 900; cursor: pointer; text-decoration: none;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+  animation: floatBounce 3s ease-in-out infinite;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.float-whatsapp:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 10px 32px rgba(37,211,102,0.6);
+}
+.float-whatsapp svg { width: 28px; height: 28px; fill: white; }
+@keyframes floatBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* ---- DECORATIVE ---- */
+.om-symbol {
+  font-size: 200px; color: rgba(201,168,76,0.03);
+  position: absolute; font-family: serif;
+  pointer-events: none; user-select: none;
+}
+.section-divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+}
+
+/* ---- ANIMATIONS ---- */
+.fade-up {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up.delay-1 { transition-delay: 0.1s; }
+.fade-up.delay-2 { transition-delay: 0.2s; }
+.fade-up.delay-3 { transition-delay: 0.3s; }
+.fade-up.delay-4 { transition-delay: 0.4s; }
+.fade-up.delay-5 { transition-delay: 0.5s; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .hero-split { grid-template-columns: 1fr; gap: 40px; }
+  .hero-right { max-width: 400px; margin: 0 auto; }
+  .anvishiki-inner, .about-inner, .leadgen-inner, .contact-inner { grid-template-columns: 1fr; gap: 50px; }
+  .services-grid, .courses-grid, .booking-cards, .blog-grid { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .hero-visual-frame { max-height: 320px; }
+}
+@media (max-width: 768px) {
+  nav { padding: 16px 24px; }
+  nav.scrolled { padding: 12px 24px; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  section { padding: 70px 0; }
+  .container { padding: 0 24px; }
+  .services-grid, .courses-grid, .booking-cards, .blog-grid { grid-template-columns: 1fr; }
+  .transform-grid { grid-template-columns: 1fr; }
+  .transform-arrow { display: none; }
+  .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .hero-stats { justify-content: space-between; }
+  .anvishiki-pillars { grid-template-columns: 1fr; }
+  .testimonials-track .testimonial-card { flex: 0 0 100%; }
+  .form-row { grid-template-columns: 1fr; }
+  .timeline { flex-direction: column; gap: 24px; }
+  .timeline-item::after { display: none; }
+  nav { padding: 14px 20px; }
+}
+
+/* SVG HERO */
+.hero-svg-art { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-symbol">ॐ</div>
+    <div class="nav-logo-text">ANVISHIKI<br>WISDOM ACADEMY</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#anvishiki">Philosophy</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/916913083731" class="nav-cta">Free Discovery Call</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#anvishiki" onclick="closeMobile()">Philosophy</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#courses" onclick="closeMobile()">Courses</a>
+  <a href="#leadgen" onclick="closeMobile()">Free Gift</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="https://wa.me/916913083731" style="color:var(--saffron)">📞 Discovery Call</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-mandala">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="200" r="190" fill="none" stroke="#c9a84c" stroke-width="0.5"/>
+      <circle cx="200" cy="200" r="150" fill="none" stroke="#c9a84c" stroke-width="0.5"/>
+      <circle cx="200" cy="200" r="110" fill="none" stroke="#c9a84c" stroke-width="0.5"/>
+      <circle cx="200" cy="200" r="70" fill="none" stroke="#c9a84c" stroke-width="1"/>
+      <circle cx="200" cy="200" r="30" fill="none" stroke="#c9a84c" stroke-width="1"/>
+      <g stroke="#c9a84c" stroke-width="0.5">
+        <line x1="200" y1="10" x2="200" y2="390"/>
+        <line x1="10" y1="200" x2="390" y2="200"/>
+        <line x1="64" y1="64" x2="336" y2="336"/>
+        <line x1="336" y1="64" x2="64" y2="336"/>
+        <line x1="40" y1="120" x2="360" y2="280"/>
+        <line x1="120" y1="40" x2="280" y2="360"/>
+        <line x1="40" y1="280" x2="360" y2="120"/>
+        <line x1="280" y1="40" x2="120" y2="360"/>
+      </g>
+      <polygon points="200,50 350,300 50,300" fill="none" stroke="#c9a84c" stroke-width="0.5"/>
+      <polygon points="200,350 350,100 50,100" fill="none" stroke="#c9a84c" stroke-width="0.5"/>
+    </svg>
+  </div>
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="hero-split container">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Ancient Wisdom · Modern Transformation</div>
+      <h1 class="hero-title">
+        ANVISHIKI<br>
+        <span>WISDOM</span>
+        ACADEMY
+      </h1>
+      <p class="hero-tagline">Master Your Mind. Transform Your Destiny.</p>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">Discover the timeless wisdom of Chanakya and transform your reality through Law of Attraction, NLP, Spirituality and Conscious Living.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Book Personal Coaching</a>
+        <a href="#services" class="btn-secondary">Join Group Coaching</a>
+        <a href="https://wa.me/916913083731" class="btn-ghost">Free Discovery Call</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">500+</div>
+          <div class="hero-stat-label">Lives Transformed</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">8+</div>
+          <div class="hero-stat-label">Years of Mastery</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">6</div>
+          <div class="hero-stat-label">Core Disciplines</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-visual-frame">
+        <div class="hero-img-box">
+          <svg class="hero-svg-art" viewBox="0 0 420 520" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#1a3460" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#0a1628" stop-opacity="0.9"/>
+              </radialGradient>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="50%" stop-color="#f0d070"/>
+                <stop offset="100%" stop-color="#c9a84c"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <rect width="420" height="520" fill="url(#bgGrad)"/>
+            <!-- Background mandala rings -->
+            <circle cx="210" cy="260" r="180" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.15"/>
+            <circle cx="210" cy="260" r="140" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.15"/>
+            <!-- Chanakya stylized figure (left) -->
+            <g opacity="0.85">
+              <!-- Robe/body -->
+              <ellipse cx="120" cy="340" rx="55" ry="80" fill="#1a3460" stroke="#c9a84c" stroke-width="0.5"/>
+              <!-- Head -->
+              <ellipse cx="120" cy="220" rx="30" ry="36" fill="#c9a84c" opacity="0.7"/>
+              <!-- Topknot -->
+              <ellipse cx="120" cy="188" rx="12" ry="18" fill="#a08030" opacity="0.8"/>
+              <!-- Beard strokes -->
+              <line x1="105" y1="246" x2="95" y2="265" stroke="#a08030" stroke-width="1.5" opacity="0.7"/>
+              <line x1="120" y1="250" x2="120" y2="272" stroke="#a08030" stroke-width="1.5" opacity="0.7"/>
+              <line x1="135" y1="246" x2="145" y2="265" stroke="#a08030" stroke-width="1.5" opacity="0.7"/>
+              <!-- Scroll/palm leaf -->
+              <rect x="140" y="265" width="40" height="12" rx="2" fill="#e8c96a" opacity="0.8"/>
+              <line x1="140" y1="269" x2="180" y2="269" stroke="#0a1628" stroke-width="0.7"/>
+              <line x1="140" y1="273" x2="180" y2="273" stroke="#0a1628" stroke-width="0.7"/>
+              <!-- Arm holding scroll -->
+              <path d="M130 280 Q150 275 160 270" fill="none" stroke="#c9a84c" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+              <!-- Saffron robe details -->
+              <path d="M75 290 Q120 320 165 290 L165 400 Q120 430 75 400 Z" fill="#e07b39" opacity="0.3"/>
+            </g>
+            <!-- Dividing light beam -->
+            <line x1="210" y1="60" x2="210" y2="480" stroke="url(#goldGrad)" stroke-width="1" opacity="0.4"/>
+            <!-- Modern meditating figure (right) -->
+            <g opacity="0.85">
+              <!-- Lotus pose body -->
+              <ellipse cx="300" cy="350" rx="50" ry="20" fill="#0f3460" opacity="0.8"/>
+              <!-- Crossed legs -->
+              <ellipse cx="280" cy="358" rx="28" ry="14" fill="#1a3460" stroke="#c9a84c" stroke-width="0.5"/>
+              <ellipse cx="320" cy="358" rx="28" ry="14" fill="#1a3460" stroke="#c9a84c" stroke-width="0.5"/>
+              <!-- Torso -->
+              <rect x="278" y="290" width="44" height="65" rx="8" fill="#1a3460" stroke="#c9a84c" stroke-width="0.5"/>
+              <!-- Head -->
+              <ellipse cx="300" cy="265" rx="26" ry="30" fill="#c9a84c" opacity="0.65"/>
+              <!-- Aura / halo rings -->
+              <circle cx="300" cy="240" r="45" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.25" filter="url(#glow)"/>
+              <circle cx="300" cy="240" r="60" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.15"/>
+              <!-- Third eye -->
+              <circle cx="300" cy="258" r="4" fill="url(#goldGrad)" filter="url(#glow)"/>
+              <!-- Hands in mudra -->
+              <ellipse cx="285" cy="335" rx="12" ry="8" fill="#c9a84c" opacity="0.5"/>
+              <ellipse cx="315" cy="335" rx="12" ry="8" fill="#c9a84c" opacity="0.5"/>
+              <!-- Energy particles around -->
+              <circle cx="255" cy="300" r="3" fill="#c9a84c" opacity="0.6" filter="url(#glow)"/>
+              <circle cx="345" cy="280" r="2" fill="#e8c96a" opacity="0.5" filter="url(#glow)"/>
+              <circle cx="250" cy="240" r="2" fill="#c9a84c" opacity="0.4"/>
+              <circle cx="352" cy="320" r="3" fill="#c9a84c" opacity="0.5" filter="url(#glow)"/>
+            </g>
+            <!-- Top OM symbol -->
+            <text x="210" y="95" text-anchor="middle" font-size="50" fill="url(#goldGrad)" opacity="0.7" font-family="serif" filter="url(#glow)">ॐ</text>
+            <!-- Bottom wisdom text -->
+            <text x="210" y="470" text-anchor="middle" font-size="10" fill="#c9a84c" opacity="0.6" font-family="Cinzel,serif" letter-spacing="3">ANCIENT · WISDOM · MODERN · MIND</text>
+            <!-- Stars/dots -->
+            <circle cx="60" cy="100" r="1.5" fill="#c9a84c" opacity="0.6"/>
+            <circle cx="380" cy="140" r="1" fill="#e8c96a" opacity="0.5"/>
+            <circle cx="40" cy="200" r="1" fill="#c9a84c" opacity="0.4"/>
+            <circle cx="390" cy="430" r="1.5" fill="#c9a84c" opacity="0.5"/>
+            <circle cx="30" cy="380" r="1" fill="#e8c96a" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="hero-corner tl"></div>
+        <div class="hero-corner tr"></div>
+        <div class="hero-corner bl"></div>
+        <div class="hero-corner br"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item">Law of Attraction</div>
+    <div class="marquee-item">Chanakya Wisdom</div>
+    <div class="marquee-item">NLP Transformation</div>
+    <div class="marquee-item">Numerology</div>
+    <div class="marquee-item">Spiritual Growth</div>
+    <div class="marquee-item">Conscious Living</div>
+    <div class="marquee-item">Mindset Mastery</div>
+    <div class="marquee-item">Inner Peace</div>
+    <div class="marquee-item">Law of Attraction</div>
+    <div class="marquee-item">Chanakya Wisdom</div>
+    <div class="marquee-item">NLP Transformation</div>
+    <div class="marquee-item">Numerology</div>
+    <div class="marquee-item">Spiritual Growth</div>
+    <div class="marquee-item">Conscious Living</div>
+    <div class="marquee-item">Mindset Mastery</div>
+    <div class="marquee-item">Inner Peace</div>
+  </div>
+</div>
+
+<!-- ANVISHIKI SECTION -->
+<section class="anvishiki-section" id="anvishiki">
+  <div class="container">
+    <div class="anvishiki-inner">
+      <div class="anvishiki-text fade-up">
+        <div class="section-eyebrow">The Foundation</div>
+        <h2 class="section-title">What is <span>Anvishiki?</span></h2>
+        <div class="gold-line"></div>
+        <p>Anvishiki (आन्वीक्षिकी) is the sacred science of inquiry, rational thinking, and self-discovery — first codified by Acharya Chanakya in his monumental work, the Arthashastra, over 2,300 years ago.</p>
+        <p>It is the art of seeing reality clearly — untainted by illusion, emotion, or bias — and making conscious decisions that lead to lasting success, prosperity, and inner peace.</p>
+        <div class="anvishiki-quote">
+          "Anvishiki is the lamp of all sciences, the resource of all actions, and the support of all virtues."<br>
+          <small style="font-size:14px;letter-spacing:2px;color:var(--gold-dim)">— Acharya Chanakya, Arthashastra</small>
+        </div>
+        <p>At Anvishiki Wisdom Academy, we bridge this 2,300-year-old wisdom with modern neuroscience, NLP, Law of Attraction, and conscious living — creating a complete system for life transformation.</p>
+      </div>
+      <div class="anvishiki-pillars fade-up delay-2">
+        <div class="pillar-card">
+          <div class="pillar-icon">🔍</div>
+          <div class="pillar-name">Critical Inquiry</div>
+          <div class="pillar-desc">Question everything. Seek the truth beneath appearances. See reality without distortion.</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🧠</div>
+          <div class="pillar-name">Self-Mastery</div>
+          <div class="pillar-desc">Master the mind, emotions, and impulses before mastering the external world.</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">⚖️</div>
+          <div class="pillar-name">Wise Decision-Making</div>
+          <div class="pillar-desc">Apply rational wisdom to every choice — personal, professional, and spiritual.</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">✨</div>
+          <div class="pillar-name">Conscious Living</div>
+          <div class="pillar-desc">Live with intention, purpose, and alignment with the laws of the universe.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline fade-up" style="margin-top:70px">
+      <div class="timeline-item">
+        <div class="timeline-dot">🏛️</div>
+        <div class="timeline-label">Takshashila<br>University</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">📜</div>
+        <div class="timeline-label">Chanakya's<br>Arthashastra</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">🔬</div>
+        <div class="timeline-label">Anvishiki<br>Philosophy</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">🧠</div>
+        <div class="timeline-label">NLP &<br>Psychology</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">🌟</div>
+        <div class="timeline-label">Modern Life<br>Transformation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-photo-frame fade-up">
+        <div class="about-photo">
+          <div class="about-photo-placeholder">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="20" stroke="#c9a84c" stroke-width="1.5"/>
+              <path d="M5 75 C5 55 75 55 75 75" stroke="#c9a84c" stroke-width="1.5" fill="none"/>
+            </svg>
+            <span style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px">FOUNDER PHOTO</span>
+          </div>
+        </div>
+        <div class="about-accent"></div>
+        <div class="about-accent-2"></div>
+      </div>
+      <div class="about-text fade-up delay-2">
+        <div class="section-eyebrow">Your Guide</div>
+        <h2 class="section-title">Meet Your<br><span>Transformation Mentor</span></h2>
+        <div class="gold-line"></div>
+        <p>With over 8 years of dedicated study and practice in the ancient sciences of Chanakya, combined with modern Neuro-Linguistic Programming and Law of Attraction, I have guided hundreds of individuals from confusion to clarity, from struggle to success.</p>
+        <p>My journey began with a deep quest for truth — exploring the sacred scriptures of ancient India and the cutting-edge sciences of modern transformation. Today, I bridge these two worlds to create profound, lasting change in the lives of entrepreneurs, professionals, and spiritual seekers.</p>
+        <p>At Anvishiki Wisdom Academy, you won't just learn — you will be transformed.</p>
+        <div class="about-specializations">
+          <span class="spec-tag">Law of Attraction</span>
+          <span class="spec-tag">NLP Practitioner</span>
+          <span class="spec-tag">Chanakya Philosophy</span>
+          <span class="spec-tag">Numerology</span>
+          <span class="spec-tag">Mindset Coaching</span>
+          <span class="spec-tag">Spiritual Growth</span>
+        </div>
+        <div style="margin-top:32px">
+          <a href="https://wa.me/916913083731" class="btn-primary">Book a Discovery Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div style="text-align:center" class="fade-up">
+      <div class="section-eyebrow" style="justify-content:center"><span>Our Offerings</span></div>
+      <h2 class="section-title">Choose Your Path to <span>Transformation</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Each service is crafted to meet you exactly where you are and guide you toward where you truly deserve to be.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up delay-1">
+        <div class="service-number">01</div>
+        <div class="service-icon">🎯</div>
+        <div class="service-title">Personal Coaching</div>
+        <div class="service-subtitle">One-to-One Transformation Sessions</div>
+        <ul class="service-includes">
+          <li>Mindset Reset & Reprogramming</li>
+          <li>Life Direction & Purpose Clarity</li>
+          <li>Spiritual Growth Guidance</li>
+          <li>Law of Attraction Mastery</li>
+          <li>Numerology Insights</li>
+        </ul>
+        <a href="https://wa.me/916913083731" class="btn-primary">Book Personal Session</a>
+      </div>
+      <div class="service-card fade-up delay-2">
+        <div class="service-number">02</div>
+        <div class="service-icon">🌐</div>
+        <div class="service-title">Group Coaching</div>
+        <div class="service-subtitle">Weekly Group Transformation Sessions</div>
+        <ul class="service-includes">
+          <li>Live Classes with Community</li>
+          <li>Mastermind Group Access</li>
+          <li>Guided Meditation Sessions</li>
+          <li>Manifestation Exercises</li>
+          <li>Chanakya Wisdom Deep Dives</li>
+        </ul>
+        <a href="https://wa.me/916913083731" class="btn-primary">Join Group Coaching</a>
+      </div>
+      <div class="service-card fade-up delay-3">
+        <div class="service-number">03</div>
+        <div class="service-icon">🔢</div>
+        <div class="service-title">Numerology</div>
+        <div class="service-subtitle">Personalized Numerology Reading</div>
+        <ul class="service-includes">
+          <li>Life Path Number Analysis</li>
+          <li>Name Numerology Reading</li>
+          <li>Career & Financial Guidance</li>
+          <li>Relationship Compatibility</li>
+          <li>Personal Year Predictions</li>
+        </ul>
+        <a href="https://wa.me/916913083731" class="btn-primary">Book Numerology Session</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TRANSFORMATION -->
+<section class="transform-section" id="transformation">
+  <div class="container">
+    <div style="text-align:center" class="fade-up">
+      <div class="section-eyebrow" style="justify-content:center">The Journey</div>
+      <h2 class="section-title">From <span>Where You Are</span><br>To Where You Deserve</h2>
+    </div>
+    <div class="transform-grid fade-up">
+      <div class="transform-col before">
+        <div class="transform-label">🔻 Before</div>
+        <ul class="transform-items">
+          <li>Confusion & mental fog</li>
+          <li>Chronic stress & anxiety</li>
+          <li>Lack of life direction</li>
+          <li>Fear & self-doubt</li>
+          <li>Repeating patterns</li>
+          <li>Financial scarcity mindset</li>
+          <li>Spiritual disconnection</li>
+        </ul>
+      </div>
+      <div class="transform-arrow">
+        <div class="arrow-circle">→</div>
+        <div style="font-family:'Cinzel',serif;font-size:10px;color:var(--gold);letter-spacing:2px;writing-mode:vertical-lr;transform:rotate(180deg);margin-top:16px">TRANSFORMATION</div>
+      </div>
+      <div class="transform-col after">
+        <div class="transform-label">✦ After</div>
+        <ul class="transform-items">
+          <li>Crystal clarity & focus</li>
+          <li>Deep inner peace</li>
+          <li>Clear life purpose</li>
+          <li>Unshakeable confidence</li>
+          <li>Abundance mindset</li>
+          <li>Financial growth & flow</li>
+          <li>Spiritual awakening</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- COURSES -->
+<section class="courses-section" id="courses">
+  <div class="container">
+    <div style="text-align:center" class="fade-up">
+      <div class="section-eyebrow" style="justify-content:center">Course Modules</div>
+      <h2 class="section-title">Master These <span>Sacred Sciences</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Six powerful disciplines, one unified path to complete life transformation.</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon">🌌</div>
+        <div class="course-title">Law of Attraction Mastery</div>
+        <div class="course-desc">Learn to align your thoughts, emotions, and vibration with the frequencies of abundance, success, and fulfillment.</div>
+        <span class="course-tag">Manifestation</span>
+      </div>
+      <div class="course-card fade-up delay-2">
+        <div class="course-icon">🧩</div>
+        <div class="course-title">NLP Transformation</div>
+        <div class="course-desc">Reprogram limiting beliefs, break destructive patterns, and install empowering neural pathways for lasting change.</div>
+        <span class="course-tag">Neuro-Linguistic</span>
+      </div>
+      <div class="course-card fade-up delay-3">
+        <div class="course-icon">🌿</div>
+        <div class="course-title">Conscious Living</div>
+        <div class="course-desc">Design a life of intentionality, awareness, and purposeful action aligned with your highest values.</div>
+        <span class="course-tag">Mindfulness</span>
+      </div>
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon">🕯️</div>
+        <div class="course-title">Spiritual Awakening</div>
+        <div class="course-desc">Deepen your connection to your true self, explore ancient meditation techniques, and awaken your inner light.</div>
+        <span class="course-tag">Spirituality</span>
+      </div>
+      <div class="course-card fade-up delay-2">
+        <div class="course-icon">📜</div>
+        <div class="course-title">Chanakya Success Blueprint</div>
+        <div class="course-desc">Apply Chanakya's timeless strategies for wealth, power, leadership, and success in modern life contexts.</div>
+        <span class="course-tag">Ancient Wisdom</span>
+      </div>
+      <div class="course-card fade-up delay-3">
+        <div class="course-icon">🔢</div>
+        <div class="course-title">Numerology for Life Design</div>
+        <div class="course-desc">Decode the hidden language of numbers to make aligned decisions in career, relationships, and timing.</div>
+        <span class="course-tag">Numerology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div style="text-align:center" class="fade-up">
+      <div class="section-eyebrow" style="justify-content:center">Testimonials</div>
+      <h2 class="section-title">Voices of <span>Transformation</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Real people. Real transformations. Real results.</p>
+    </div>
+    <div class="testimonials-slider fade-up">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Chanakya Blueprint sessions completely changed how I approach my business. Within 3 months, my revenue doubled and I finally have the clarity I was seeking for years."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Rahul Sharma</div>
+              <div class="testimonial-role">Entrepreneur · Delhi</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The NLP sessions broke patterns I had carried for 15 years. I now understand my mind and can consciously create the life I desire. Truly life-changing work."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">P</div>
+            <div>
+              <div class="testimonial-name">Priya Nair</div>
+              <div class="testimonial-role">Corporate Professional · Bangalore</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"My numerology reading was eerily accurate. It helped me choose the right business name, the right launch date, and now everything is flowing. I'm a believer."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Anjali Mehta</div>
+              <div class="testimonial-role">Business Owner · Mumbai</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Law of Attraction coaching here is different — it's grounded in ancient wisdom and modern science. I've manifested my dream job and a peaceful relationship in 6 months."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">V</div>
+            <div>
+              <div class="testimonial-name">Vikram Iyer</div>
+              <div class="testimonial-role">IT Professional · Chennai</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Group coaching was the best investment I made. The community, the meditations, the weekly wisdom — it's not just coaching, it's a spiritual family."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Sunita Rao</div>
+              <div class="testimonial-role">Spiritual Seeker · Hyderabad</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As a student preparing for competitive exams, the mindset coaching gave me an unfair advantage. I cleared my exam in the first attempt with top percentile."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">K</div>
+            <div>
+              <div class="testimonial-name">Karthik Reddy</div>
+              <div class="testimonial-role">UPSC Qualifier · Pune</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevBtn">‹</button>
+      <div class="slider-dots" id="sliderDots">
+        <div class="slider-dot active" data-index="0"></div>
+        <div class="slider-dot" data-index="1"></div>
+        <div class="slider-dot" data-index="2"></div>
+      </div>
+      <button class="slider-btn" id="nextBtn">›</button>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- LEAD GEN -->
+<section class="leadgen-section" id="leadgen">
+  <div class="container">
+    <div class="leadgen-inner">
+      <div class="leadgen-book fade-up">
+        <div class="book-top-bar"></div>
+        <div style="font-size:40px;margin-bottom:16px">📜</div>
+        <div class="book-title">7 Ancient Chanakya Principles<br>For Modern Success</div>
+        <div class="book-subtitle">A Free Wisdom Guide</div>
+        <div class="book-chapters">
+          <div class="book-chapter">The Art of Strategic Thinking</div>
+          <div class="book-chapter">Master Your Inner Circle</div>
+          <div class="book-chapter">Wealth Creation Philosophy</div>
+          <div class="book-chapter">The Power of Self-Discipline</div>
+          <div class="book-chapter">Navigating Challenges Wisely</div>
+          <div class="book-chapter">Building Unshakeable Reputation</div>
+          <div class="book-chapter">The Science of Right Timing</div>
+        </div>
+        <div style="margin-top:20px;font-family:'Cinzel',serif;font-size:11px;color:var(--gold);letter-spacing:2px">FREE · INSTANT ACCESS</div>
+      </div>
+      <div class="leadgen-form-area fade-up delay-2">
+        <div class="section-eyebrow">Free Gift</div>
+        <h2 class="section-title" style="font-size:clamp(24px,2.5vw,38px)">Download Your Free<br><span>Chanakya Wisdom Guide</span></h2>
+        <div class="gold-line"></div>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:32px">Get instant access to the 7 timeless principles of Chanakya that are revolutionizing the lives of modern entrepreneurs and leaders.</p>
+        <div class="form-group">
+          <input type="text" placeholder="Your Full Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email Address" />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="WhatsApp Number (Optional)" />
+        </div>
+        <a href="#" class="btn-primary" style="display:inline-block;padding:18px 40px;font-size:13px">
+          🎁 Download Free Guide
+        </a>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:16px;line-height:1.5">✓ Instant download &nbsp;·&nbsp; ✓ No spam &nbsp;·&nbsp; ✓ Ancient wisdom for modern success</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- BOOKING -->
+<section class="booking-section" id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="fade-up">
+        <div class="section-eyebrow" style="justify-content:center">Start Your Journey</div>
+        <h2 class="section-title" style="text-align:center">Begin Your <span>Transformation</span> Today</h2>
+        <p class="section-subtitle" style="margin:0 auto;text-align:center">Choose how you want to work together. Every path leads to the same destination — your best life.</p>
+      </div>
+      <div class="booking-cards">
+        <div class="booking-card fade-up delay-1">
+          <div class="booking-icon">🎯</div>
+          <div class="booking-title">Personal Coaching</div>
+          <div class="booking-desc">Intensive one-to-one sessions tailored completely to your unique situation, challenges, and goals.</div>
+          <a href="https://wa.me/916913083731?text=I want to book a Personal Coaching session" class="btn-primary">Book Now</a>
+        </div>
+        <div class="booking-card featured fade-up delay-2">
+          <div class="booking-icon">👥</div>
+          <div class="booking-title">Group Coaching</div>
+          <div class="booking-desc">Join a powerful community of like-minded individuals on the path of wisdom and transformation.</div>
+          <a href="https://wa.me/916913083731?text=I want to join Group Coaching" class="btn-primary">Register Now</a>
+        </div>
+        <div class="booking-card fade-up delay-3">
+          <div class="booking-icon">📞</div>
+          <div class="booking-title">Free Discovery Call</div>
+          <div class="booking-desc">A complimentary 30-minute conversation to explore how we can work together for your transformation.</div>
+          <a href="https://wa.me/916913083731?text=I want to book a Free Discovery Call" class="btn-primary">Book Free Call</a>
+        </div>
+      </div>
+      <div class="whatsapp-row">
+        <a href="https://wa.me/916913083731" class="whatsapp-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="tel:+916913083731" class="btn-secondary" style="display:flex;align-items:center;gap:8px">📞 +91 6913083731</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- BLOG -->
+<section class="blog-section" id="blog">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px" class="fade-up">
+      <div>
+        <div class="section-eyebrow">Wisdom Blog</div>
+        <h2 class="section-title">Ancient Knowledge<br><span>Modern Insights</span></h2>
+      </div>
+      <a href="#" class="btn-secondary" style="margin-bottom:16px">View All Articles</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card fade-up delay-1">
+        <div class="blog-thumb">
+          📜
+          <div class="blog-tag">Chanakya Wisdom</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-title">7 Chanakya Strategies Modern Leaders Must Master</div>
+          <p class="blog-excerpt">Discover how Chanakya's ancient strategies for leadership and governance apply directly to modern business success...</p>
+          <div class="blog-meta">
+            <span>June 2025</span>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card fade-up delay-2">
+        <div class="blog-thumb">
+          🌌
+          <div class="blog-tag">Law of Attraction</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-title">Why Your Manifestations Are Failing (The Real Reason)</div>
+          <p class="blog-excerpt">Most people focus on the 'how' of manifestation but miss the critical inner alignment that makes the universe respond...</p>
+          <div class="blog-meta">
+            <span>May 2025</span>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card fade-up delay-3">
+        <div class="blog-thumb">
+          🔢
+          <div class="blog-tag">Numerology</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-title">How Your Life Path Number Reveals Your Soul's Purpose</div>
+          <p class="blog-excerpt">Understanding your core numerology numbers can be the key to unlocking decisions that are truly aligned with your destiny...</p>
+          <div class="blog-meta">
+            <span>April 2025</span>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info fade-up">
+        <div class="section-eyebrow">Get In Touch</div>
+        <h2 class="section-title">Let's Begin Your <span>Journey</span></h2>
+        <div class="gold-line"></div>
+        <p style="font-size:16px;line-height:1.9;color:var(--text-muted);margin-bottom:40px">Every transformation begins with a single step. Reach out and let's have a conversation about where you are and where you want to be.</p>
+
+        <div class="contact-method">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-method-label">Email Us</div>
+            <a href="mailto:anvishikiwisdom108@gmail.com" class="contact-method-value">anvishikiwisdom108@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-method-label">Call / WhatsApp</div>
+            <a href="tel:+916913083731" class="contact-method-value">+91 6913083731</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-method-label">WhatsApp Chat</div>
+            <a href="https://wa.me/916913083731" class="contact-method-value">Chat Now →</a>
+          </div>
+        </div>
+
+        <div style="margin-top:20px">
+          <a href="https://wa.me/916913083731" class="whatsapp-btn" style="display:inline-flex">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Start WhatsApp Chat
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-up delay-2">
+        <div style="background:rgba(13,31,60,0.6);border:1px solid rgba(201,168,76,0.15);padding:44px">
+          <h3 style="font-family:'Cinzel',serif;font-size:22px;color:var(--ivory);margin-bottom:28px">Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group"><input type="text" placeholder="Your Name" /></div>
+            <div class="form-group"><input type="email" placeholder="Email Address" /></div>
+          </div>
+          <div class="form-group"><input type="tel" placeholder="Phone / WhatsApp Number" /></div>
+          <div class="form-group">
+            <select style="width:100%;padding:16px 20px;background:rgba(13,31,60,0.8);border:1px solid rgba(201,168,76,0.2);color:var(--text-muted);font-family:'Raleway',sans-serif;font-size:15px;outline:none;appearance:none">
+              <option value="">Select Service of Interest</option>
+              <option>Personal Coaching</option>
+              <option>Group Coaching</option>
+              <option>Numerology Consultation</option>
+              <option>Free Discovery Call</option>
+            </select>
+          </div>
+          <div class="form-group"><textarea placeholder="Your Message or Question..."></textarea></div>
+          <button class="btn-primary" style="width:100%;text-align:center;padding:18px;font-size:13px;clip-path:none">Send Message ✦</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-symbol">ॐ</div>
+          <div class="nav-logo-text" style="font-size:16px">ANVISHIKI<br>WISDOM ACADEMY</div>
+        </div>
+        <p class="footer-desc">Ancient Wisdom. Modern Transformation. Bridging the timeless teachings of Chanakya with modern science for complete life transformation.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" title="Instagram">📷</a>
+          <a href="#" class="social-link" title="YouTube">▶</a>
+          <a href="https://wa.me/916913083731" class="social-link" title="WhatsApp">💬</a>
+          <a href="mailto:anvishikiwisdom108@gmail.com" class="social-link" title="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#anvishiki">Anvishiki Philosophy</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">Personal Coaching</a></li>
+          <li><a href="#">Group Coaching</a></li>
+          <li><a href="#">Numerology Reading</a></li>
+          <li><a href="#">NLP Sessions</a></li>
+          <li><a href="#">Free Discovery Call</a></li>
+          <li><a href="#leadgen">Free Wisdom Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:anvishikiwisdom108@gmail.com">anvishikiwisdom108@gmail.com</a></li>
+          <li><a href="tel:+916913083731">+91 6913083731</a></li>
+          <li><a href="https://wa.me/916913083731">WhatsApp Chat</a></li>
+        </ul>
+        <div style="margin-top:24px">
+          <div style="font-family:'Cinzel',serif;font-size:11px;color:var(--gold);letter-spacing:2px;margin-bottom:12px">WISDOM HOURS</div>
+          <div style="font-size:13px;color:var(--text-muted)">Mon – Sat: 9 AM – 7 PM<br>Sunday by Appointment</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2025 Anvishiki Wisdom Academy. All Rights Reserved. Crafted with ✦ and Ancient Wisdom.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/916913083731" class="float-whatsapp" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+// NAV SCROLL
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// HAMBURGER
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.toggle('open');
+});
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+// PARTICLES
+(function() {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 30; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;--dur:${6+Math.random()*10}s;animation-delay:${Math.random()*10}s;width:${1+Math.random()*3}px;height:${1+Math.random()*3}px`;
+    container.appendChild(p);
+  }
+})();
+
+// INTERSECTION OBSERVER
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// TESTIMONIAL SLIDER
+let currentSlide = 0;
+const track = document.getElementById('testimonialsTrack');
+const dots = document.querySelectorAll('.slider-dot');
+const totalSlides = 3;
+
+function goToSlide(n) {
+  currentSlide = (n + totalSlides) % totalSlides;
+  const cardWidth = track.children[0].getBoundingClientRect().width;
+  const gap = 28;
+  const isMobile = window.innerWidth <= 768;
+  const offset = isMobile ? currentSlide * (cardWidth + gap) : currentSlide * (cardWidth + gap);
+  track.style.transform = `translateX(-${offset}px)`;
+  dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+}
+
+document.getElementById('nextBtn').addEventListener('click', () => goToSlide(currentSlide + 1));
+document.getElementById('prevBtn').addEventListener('click', () => goToSlide(currentSlide - 1));
+dots.forEach(d => d.addEventListener('click', () => goToSlide(+d.dataset.index)));
+
+// Auto-advance
+setInterval(() => goToSlide(currentSlide + 1), 5000);
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+// Form submissions (prevent default, show thank you)
+document.querySelectorAll('button.btn-primary').forEach(btn => {
+  if (btn.textContent.includes('Send Message')) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      btn.textContent = '✦ Message Sent! We will contact you soon.';
+      btn.style.background = 'linear-gradient(135deg,#2d8a50,#3dae68)';
+      setTimeout(() => {
+        btn.textContent = 'Send Message ✦';
+        btn.style.background = '';
+      }, 4000);
+    });
+  }
+});
+</script>
+</body>
+</html>
